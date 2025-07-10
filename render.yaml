@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: signal-generator
+    env: python
+    schedule: "0 * * * *"  # ogni ora
+    buildCommand: ""
+    startCommand: "python signal_generator.py"
